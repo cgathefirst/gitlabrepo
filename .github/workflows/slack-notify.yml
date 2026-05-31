@@ -22,6 +22,7 @@ jobs:
         with:
           push: true
           tags: |
+            ${{ vars.DOCKERHUB_USERNAME }}/slack-demo:latest
             ${{ vars.DOCKERHUB_USERNAME }}/slack-demo:${{ github.sha }}
 
           
